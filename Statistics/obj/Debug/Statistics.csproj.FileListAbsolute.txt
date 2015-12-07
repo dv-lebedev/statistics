@@ -1,0 +1,5 @@
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.pdb
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.csprojResolveAssemblyReference.cache
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.pdb

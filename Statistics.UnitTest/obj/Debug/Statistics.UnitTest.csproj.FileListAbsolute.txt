@@ -1,0 +1,8 @@
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\bin\Debug\Statistics.UnitTest.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\bin\Debug\Statistics.UnitTest.pdb
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.csprojResolveAssemblyReference.cache
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.pdb
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\bin\Debug\Statistics.dll
+c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics.UnitTest\bin\Debug\Statistics.pdb
