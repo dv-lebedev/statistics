@@ -20,21 +20,30 @@ using Statistics.Models;
 namespace Statistics.UnitTest.Models
 {
     [TestClass]
-    public class LinearRegressionTest
+    public class AutoRegressionTest
     {
         [TestMethod]
-        public void LinearTest()
+        public void AutoTest()
         {
-            decimal[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            decimal[] y = { 8, 6, 10, 6, 10, 13, 9, 11, 15, 17 };
+            decimal[] vector =
+            {
+                345113,
+                441452,
+                544153,
+                720731,
+                948056,
+                913345,
+                1082569,
+                1302079,
+                1459096
+            };
 
+            var autoRegression = new AutoRegression(vector, 1);
 
-            var lr = new LinearRegression(x, y);
-
-            Assert.AreEqual(0.8141, (double)lr.RValue, 0.0001);
-            Assert.AreEqual(0.6628, (double)lr.RSquared, 0.0001);
-            Assert.AreEqual(5.1333, (double)lr.Alpha, 0.0001);
-            Assert.AreEqual(0.9757, (double)lr.Beta, 0.0001);
+            Assert.AreEqual(113436.67, (double)autoRegression.Alpha, 0.01);
+            Assert.AreEqual(1.0327, (double)autoRegression.Beta, 0.001);
+            Assert.AreEqual(0.9713, (double)autoRegression.RValue, 0.001);
+            Assert.AreEqual(0.9434, (double)autoRegression.RSquared, 0.001);
         }
     }
 }

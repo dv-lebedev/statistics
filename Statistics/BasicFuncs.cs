@@ -36,7 +36,7 @@ namespace Statistics
             {
                 result += Math.Pow(arr[i] - average, 2);
             }
-            return (decimal)Math.Sqrt(result /= arr.Length);
+            return (decimal)Math.Sqrt(result /= (arr.Length -1 ));
         }
 
         public static decimal MultiplyArrays(decimal[] x, decimal[] y)

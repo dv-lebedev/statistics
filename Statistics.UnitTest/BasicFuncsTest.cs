@@ -26,28 +26,19 @@ namespace Statistics.UnitTest
         [TestMethod]
         public void GetStandardDeviationTest()
         {
-            decimal[] values = { 1, 3, 5, 7, 9, 11, 15, 17 };
-
-            try
-            {
-                BasicFuncs.GetStandardDeviation(null);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("values", ex.ParamName);
-            }
+            decimal[] values = { 1, 3, 5, 7 };
 
 
             decimal result = BasicFuncs.GetStandardDeviation(values);
 
-            Assert.AreEqual(5.2678, (double)result, 0.0001);
+            Assert.AreEqual(2.5819, (double)result, 0.0001);
 
 
-            values = new decimal[] { -3, -5, -8, -13, -35, -57 };
+            values = new decimal[] { 1, 2, 4, 5 };
 
             result = BasicFuncs.GetStandardDeviation(values);
 
-            Assert.AreEqual(19.5824, (double)result, 0.0001);
+            Assert.AreEqual(1.8257, (double)result, 0.0001);
 
         }
 
@@ -62,26 +53,6 @@ namespace Statistics.UnitTest
             Assert.AreEqual(true, x.Length == y.Length);
 
 
-            try
-            {
-                BasicFuncs.MultiplyArrays(null, y);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("x", ex.ParamName);
-            }
-
-
-            try
-            {
-                BasicFuncs.MultiplyArrays(x, null);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("y", ex.ParamName);
-            }
-
-
             decimal result = BasicFuncs.MultiplyArrays(x, y);
 
             Assert.AreEqual(-6556, result);
@@ -92,16 +63,6 @@ namespace Statistics.UnitTest
         public void PowArrayTest()
         {
             decimal[] values = { 12, 65, 83, 55, 100, 248, 201, 0, 0, -3, -255 };
-
-
-            try
-            {
-                BasicFuncs.PowArray(null);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("values", ex.ParamName);
-            }
 
 
             decimal result = BasicFuncs.PowArray(values);

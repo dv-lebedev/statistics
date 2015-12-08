@@ -55,7 +55,10 @@
   <ItemGroup>
     <Compile Include="BasicFuncsTest.cs" />
     <Compile Include="MatrixTest.cs" />
+    <Compile Include="Models\AutoRegressionTest.cs" />
     <Compile Include="Models\LinearRegressionTest.cs" />
+    <Compile Include="Models\LogitRegressionTest.cs" />
+    <Compile Include="Models\MultipleLinearRegressionTest.cs" />
     <Compile Include="MovingAveragesTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

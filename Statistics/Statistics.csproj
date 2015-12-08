@@ -44,11 +44,14 @@
     <Compile Include="DifferentLengthException.cs" />
     <Compile Include="IRegressionMethod.cs" />
     <Compile Include="Matrix.cs" />
+    <Compile Include="Models\AutoRegression.cs" />
     <Compile Include="Models\LinearRegression.cs" />
+    <Compile Include="Models\LogitRegression.cs" />
+    <Compile Include="Models\MultipleLinearRegression.cs" />
     <Compile Include="MovingAverages.cs" />
     <Compile Include="OrdinaryLeastSquares.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Regression.cs" />
+    <Compile Include="IRegression.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-
 using System;
+using System.Linq;
 
 namespace Statistics
 {
@@ -58,15 +58,31 @@ namespace Statistics
             RValues = new decimal[Coefs.Length - 1];
             RSquaredValues = new decimal[Coefs.Length - 1];
 
-            decimal ySd = BasicFuncs.GetStandardDeviation(y);
+            decimal yAverage = y.Average();
+            decimal ySD = BasicFuncs.GetStandardDeviation(y);
 
             for (int i = 0; i < RValues.Length; i++)
             {
-                RValues[i] = Coefs[i + 1] * (BasicFuncs.GetStandardDeviation(xn[i]) / ySd);
+                RValues[i] = CalculateRValue(xn[i], y, yAverage, ySD);
 
                 RSquaredValues[i] = (decimal)Math.Pow((double)RValues[i], 2);
             }
+        }
 
+        private decimal CalculateRValue(decimal[] x, decimal[] y, decimal yAverage, decimal ySD)
+        {
+            int length = x.Length;
+            var xAverage = x.Average();
+            var xSD = BasicFuncs.GetStandardDeviation(x);
+
+            decimal total = 0;
+
+            for(int i=0; i <length; i++)
+            {
+                total += ((x[i] - xAverage) / xSD) * ((y[i] - yAverage) / ySD);
+            }
+
+            return total / (length - 1);
         }
     }
 }

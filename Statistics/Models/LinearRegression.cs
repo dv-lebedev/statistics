@@ -19,7 +19,7 @@ using System;
 
 namespace Statistics.Models
 {
-    public class LinearRegression : Regression
+    public class LinearRegression : IRegression
     {
         public IRegressionMethod RegressionMethod { get; protected set; }
 

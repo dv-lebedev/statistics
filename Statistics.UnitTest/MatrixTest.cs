@@ -169,7 +169,6 @@ namespace Statistics.UnitTest
             for (int i = 0; i < vectorResult.Length; i++)
             {
                 Assert.AreEqual(vectorExpected[i], vectorResult[i]);
-                //System.Diagnostics.Debug.Write(vectorResult[i] + " ");
             }
         }
 

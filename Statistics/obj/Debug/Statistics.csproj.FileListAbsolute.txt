@@ -1,5 +1,5 @@
-c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.dll
-c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.pdb
-c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.csprojResolveAssemblyReference.cache
-c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.dll
-c:\users\denis_lebedev\documents\visual studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.pdb
+C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.dll
+C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\bin\Debug\Statistics.pdb
+C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.dll
+C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.pdb
+C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.csprojResolveAssemblyReference.cache

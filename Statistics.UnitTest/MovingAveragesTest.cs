@@ -40,23 +40,12 @@ namespace Statistics.UnitTest
 
             try
             {
-                var smaResult = MovingAverages.SMA(null, -1);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("values", ex.ParamName);
-            }
-
-
-            try
-            {
                 var result = MovingAverages.SMA(values, values.Length + 1);
             }
             catch (ArgumentException ex)
             {
                 Assert.AreEqual("period > values.Lenght", ex.Message);
             }
-
 
 
             var sma5Result = MovingAverages.SMA(values, 5);
@@ -84,16 +73,6 @@ namespace Statistics.UnitTest
             catch (ArgumentException ex)
             {
                 Assert.AreEqual("period <= 0", ex.Message);
-            }
-
-
-            try
-            {
-                var smaResult = MovingAverages.WMA(null, -1);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("values", ex.ParamName);
             }
 
 
@@ -134,26 +113,6 @@ namespace Statistics.UnitTest
             catch (ArgumentException ex)
             {
                 Assert.AreEqual("period <= 0", ex.Message);
-            }
-
-
-            try
-            {
-                var smaResult = MovingAverages.VMA(null, null, -1);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("values", ex.ParamName);
-            }
-
-
-            try
-            {
-                var smaResult = MovingAverages.VMA(values, null, -1);
-            }
-            catch (ArgumentNullException ex)
-            {
-                Assert.AreEqual("volumes", ex.ParamName);
             }
 
 
