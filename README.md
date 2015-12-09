@@ -28,9 +28,9 @@ public void MatrixInverse_Example()
 {
     decimal[][] m = new decimal[3][]
     {
-        new decimal[3] {  1,   4,  10  },
-        new decimal[3] {  1,   2,  8   },
-        new decimal[3] {  0,   1,  4   }
+        new decimal[3] {  1,   4,   10  },
+        new decimal[3] {  1,   2,   8   },
+        new decimal[3] {  0,   1,   4   }
     };
     
     var matrix = new Matrix(m, copy: true);
