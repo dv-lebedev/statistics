@@ -5,7 +5,7 @@ Matrixes, moving averages, simple and multiple linear regressions etc.
 ![.Net version](https://img.shields.io/badge/.NET%20Framework-v4.5.2-red.svg)
 
 ```c#
-public void LinearRegressionExample()
+public void LinearRegression_Example()
 {
     decimal[] x = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
     decimal[] y = { 8, 6, 10, 6, 10, 13, 9, 11, 15, 17 };
@@ -46,7 +46,7 @@ public void MatrixInverse_Example()
     
     var matrix = new Matrix(m, copy: true);
 
-    var inverseMatrix = matrix.Inverse();   
+    var inversedMatrix = matrix.Inverse();   
 }
 
 ```
