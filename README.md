@@ -14,7 +14,18 @@ public void LinearRegressionExample()
 
     Console.WriteLine("y = {0} + {1} * x + error", lr.Alpha, lr.Beta);
     Console.WriteLine("r_value = {0}", lr.RValue);
-    Console.WriteLine("r_squred = {0}", lr.RSquared);
+    Console.WriteLine("r_squared = {0}", lr.RSquared);
+}
+
+public void LogitRegression_Example()
+{
+	bool[] y = { true, true, true, false, true, false, false, true, false };
+    decimal[] x = { 1, 3, 2, 23, 1, 36, 35, 5, 17 };
+
+    var logitRegression = new LogitRegression(y, x);
+
+    var result = logitRegression.PredictValue(new decimal[] { 17 });
+    Console.WriteLine("Result = {0}", result);
 }
 
 public void SMA_Example()
