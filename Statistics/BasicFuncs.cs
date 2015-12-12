@@ -22,6 +22,18 @@ namespace Statistics
 {
     public static class BasicFuncs
     {
+        public static decimal[] GetError(decimal[] values)
+        {
+            decimal[] result = new decimal[values.Length - 1];
+
+            for (int i = 1; i < values.Length; i++)
+            {
+                result[i - 1] = values[i] - values[i - 1];
+            }
+
+            return result;
+        }
+
         public static decimal GetStandardDeviation(decimal[] values)
         {
             if (values == null) throw new ArgumentNullException("values");
