@@ -24,6 +24,19 @@ namespace Statistics.UnitTest
     {
 
         [TestMethod]
+        public void GetErrorTest()
+        {
+            decimal[] values = { 1, 2, 5, 7, 4, 6, 5, -3, 65, 2, -45, -4, 309.007773M };
+            decimal[] expected = { 1, 3, 2, -3, 2, -1, -2, 62, -63, -47, -49, 305.007773M };
+            var errorValues = BasicFuncs.GetError(values);
+
+            for (int i = 0; i < values.Length - 1; i++)
+            {
+                Assert.AreEqual((double)expected[i], (double)errorValues[i], 0.001);
+            }
+        }
+
+        [TestMethod]
         public void GetStandardDeviationTest()
         {
             decimal[] values = { 1, 3, 5, 7 };
@@ -39,9 +52,7 @@ namespace Statistics.UnitTest
             result = BasicFuncs.GetStandardDeviation(values);
 
             Assert.AreEqual(1.8257, (double)result, 0.0001);
-
         }
-
 
         [TestMethod]
         public void MultiplyArraysTest()
