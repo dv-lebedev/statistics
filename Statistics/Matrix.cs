@@ -70,7 +70,7 @@ namespace Statistics
             if (copy)
             {
                 this.matrix = Create(matrix.Length, matrix[0].Length);
-
+                
                 Array.Copy(matrix, this.matrix, matrix.Length);
             }
             else

@@ -27,7 +27,9 @@ namespace Statistics.UnitTest
         public void GetErrorTest()
         {
             decimal[] values = { 1, 2, 5, 7, 4, 6, 5, -3, 65, 2, -45, -4, 309.007773M };
+
             decimal[] expected = { 1, 3, 2, -3, 2, -1, -2, 62, -63, -47, -49, 305.007773M };
+
             var errorValues = BasicFuncs.GetError(values);
 
             for (int i = 0; i < values.Length - 1; i++)

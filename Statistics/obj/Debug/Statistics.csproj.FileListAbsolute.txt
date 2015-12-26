@@ -3,3 +3,8 @@ C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statisti
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.dll
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.pdb
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics\obj\Debug\Statistics.csprojResolveAssemblyReference.cache
+C:\GitHub\statistics\Statistics\bin\Debug\Statistics.dll
+C:\GitHub\statistics\Statistics\bin\Debug\Statistics.pdb
+C:\GitHub\statistics\Statistics\obj\Debug\Statistics.csprojResolveAssemblyReference.cache
+C:\GitHub\statistics\Statistics\obj\Debug\Statistics.dll
+C:\GitHub\statistics\Statistics\obj\Debug\Statistics.pdb

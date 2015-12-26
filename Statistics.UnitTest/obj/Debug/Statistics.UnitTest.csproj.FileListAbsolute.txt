@@ -6,3 +6,12 @@ C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statisti
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.csprojResolveAssemblyReference.cache
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.dll
 C:\Users\Denis_Lebedev\Documents\Visual Studio 2015\Projects\Statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.pdb
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Statistics.UnitTest.dll
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Statistics.UnitTest.pdb
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Statistics.dll
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Statistics.pdb
+C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.csprojResolveAssemblyReference.cache
+C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.dll
+C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.pdb
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
