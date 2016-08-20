@@ -20,7 +20,7 @@ namespace Statistics.Models
 {
     public class AutoRegression : IRegression
     {
-        public IRegressionMethod RegressionMethod { get; protected set; }
+        public IRegressionMethod RegressionMethod { get; set; }
 
         public decimal Alpha
         {
@@ -42,28 +42,18 @@ namespace Statistics.Models
             get { return RegressionMethod.RSquaredValues[0]; }
         }
 
-
-        protected AutoRegression()
+        public AutoRegression()
         {
             RegressionMethod = new OrdinaryLeastSquares();
         }
 
-
-        public AutoRegression(decimal[] x, int i)
-            : this()
-        {
-            Compute(x, i);
-        }
-
-
-        protected void Compute(decimal[] vectror, int lag)
+        public void Compute(decimal[] vectror, int lag)
         {
             if (vectror == null)
                 throw new ArgumentNullException("vector");
 
             if (lag >= vectror.Length)
                 throw new IndexOutOfRangeException("lag can't be more or equal x.Length");
-
 
             decimal[] x = new decimal[vectror.Length - lag];
 
@@ -72,14 +62,12 @@ namespace Statistics.Models
                 x[i] = vectror[i];
             }
 
-
             decimal[] y = new decimal[vectror.Length - lag];
 
             for (int i = lag; i < vectror.Length; i++)
             {
                 y[i - lag] = vectror[i];
             }
-
 
             RegressionMethod.Compute(y, x);
         }

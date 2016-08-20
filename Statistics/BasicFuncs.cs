@@ -22,7 +22,6 @@ namespace Statistics
 {
     public static class BasicFuncs
     {
-
         public static decimal[] GetError(decimal[] values)
         {
             decimal[] result = new decimal[values.Length - 1];

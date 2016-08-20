@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Statistics.UnitTest
@@ -22,13 +21,12 @@ namespace Statistics.UnitTest
     [TestClass]
     public class BasicFuncsTest
     {
-
         [TestMethod]
         public void GetErrorTest()
         {
             decimal[] values = { 1, 2, 5, 7, 4, 6, 5, -3, 65, 2, -45, -4, 309.007773M };
 
-            decimal[] expected = { 1, 3, 2, -3, 2, -1, -2, 62, -63, -47, -49, 305.007773M };
+            decimal[] expected = { 1, 3, 2, -3, 2, -1, -8, 68, -63, -47, 41, 313.007773M };
 
             var errorValues = BasicFuncs.GetError(values);
 

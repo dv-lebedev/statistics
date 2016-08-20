@@ -18,9 +18,7 @@ namespace Statistics.Models
 {
     public class MultipleLinearRegression : IRegression
     {
-
-        public IRegressionMethod RegressionMethod { get; protected set; }
-
+        public IRegressionMethod RegressionMethod { get; set; }
 
         public decimal[] Coefs
         {
@@ -37,18 +35,14 @@ namespace Statistics.Models
             get { return RegressionMethod.RSquaredValues; }
         }
 
-
-        protected MultipleLinearRegression()
+        public MultipleLinearRegression()
         {
             RegressionMethod = new OrdinaryLeastSquares();
         }
 
-
-        public MultipleLinearRegression(decimal[] y, params decimal[][] xn)
-            : this()
+        public void Compute(decimal[] y, params decimal[][] xn)
         {
             RegressionMethod.Compute(y, xn);
         }
-
     }
 }

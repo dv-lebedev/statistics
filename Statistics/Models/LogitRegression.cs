@@ -22,7 +22,7 @@ namespace Statistics.Models
     public class LogitRegression : IRegression
     {
 
-        public IRegressionMethod RegressionMethod { get; protected set; }
+        public IRegressionMethod RegressionMethod { get; set; }
 
         public decimal[] Coefs
         {
@@ -39,15 +39,12 @@ namespace Statistics.Models
             get { return RegressionMethod.RSquaredValues; }
         }
 
-        
-        protected LogitRegression()
+        public LogitRegression()
         {
             RegressionMethod = new OrdinaryLeastSquares();
         }
 
-
-        public LogitRegression(bool[] y, params decimal[][] xn)
-            : this()
+        public void Compute(bool[] y, params decimal[][] xn)
         {
             RegressionMethod.Compute(y.Select(i => Convert.ToDecimal(i)).ToArray(), xn);
         }

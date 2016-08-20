@@ -21,47 +21,39 @@ namespace Statistics.Models
 {
     public class LinearRegression : IRegression
     {
-        public IRegressionMethod RegressionMethod { get; protected set; }
+        public IRegressionMethod RegressionMethod { get; set; }
 
         public decimal Alpha
         {
-            get
-            {
-                return RegressionMethod.Coefs[0];
-            }
+            get { return RegressionMethod.Coefs[0]; }
         }
 
         public decimal Beta
         {
-            get
-            {
-                return RegressionMethod.Coefs[1];
-            }
+            get { return RegressionMethod.Coefs[1]; }
         }
 
         public decimal RValue
         {
-            get
-            {
-                return RegressionMethod.RValues[0];
-            }
+            get { return RegressionMethod.RValues[0]; }
         }
 
         public decimal RSquared
         {
-            get
-            {
-                return RegressionMethod.RSquaredValues[0];
-            }
+            get { return RegressionMethod.RSquaredValues[0]; }
         }
 
-        public LinearRegression(decimal[] x, decimal[] y)
+        public LinearRegression()
+        {
+            RegressionMethod = new OrdinaryLeastSquares();
+        }
+
+        public void Compute(decimal[] x, decimal[] y)
         {
             if (x == null) throw new ArgumentNullException("x");
             if (y == null) throw new ArgumentNullException("y");
             if (x.Length != y.Length) throw new DifferentLengthException();
 
-            RegressionMethod = new OrdinaryLeastSquares();
             RegressionMethod.Compute(y, x);
         }
     }

@@ -36,7 +36,7 @@ namespace Statistics
 
             for (int i = 0; i < size; i++)
             {
-                result[i] = (double)array[i];
+                result[i] = array[i].ToDouble();
             }
 
             return result;
@@ -50,7 +50,7 @@ namespace Statistics
 
             for (int i = 0; i < size; i++)
             {
-                result[i] = (decimal)array[i];
+                result[i] = array[i].ToDecimal();
             }
 
             return result;

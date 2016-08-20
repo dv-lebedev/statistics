@@ -20,7 +20,8 @@ namespace Statistics.UnitTest.Models
             decimal[] x2 = { 18.9M, 13.7M, 18.5M, 4.8M, 21.8M, 5.8M, 99, 20.1M, 60.6M, 1.4M };
 
 
-            var mlr = new MultipleLinearRegression(y, x1, x2);
+            var mlr = new MultipleLinearRegression();
+            mlr.Compute(y, x1, x2);
 
             Assert.AreEqual(1.0841, (double)mlr.Coefs[0], 0.0001);
             Assert.AreEqual(0.0431, (double)mlr.Coefs[1], 0.0001);

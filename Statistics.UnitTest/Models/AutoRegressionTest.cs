@@ -38,7 +38,8 @@ namespace Statistics.UnitTest.Models
                 1459096
             };
 
-            var autoRegression = new AutoRegression(vector, 1);
+            var autoRegression = new AutoRegression();
+            autoRegression.Compute(vector, 1);
 
             Assert.AreEqual(113436.67, (double)autoRegression.Alpha, 0.01);
             Assert.AreEqual(1.0327, (double)autoRegression.Beta, 0.001);
