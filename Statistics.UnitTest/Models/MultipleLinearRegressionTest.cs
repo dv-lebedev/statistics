@@ -1,10 +1,21 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*
+Copyright 2015-2016 Denis Lebedev
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Statistics.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Statistics.UnitTest.Models
 {
@@ -19,7 +30,6 @@ namespace Statistics.UnitTest.Models
             decimal[] x1 = { 31.3M, 13.4M, 4.5M, 10, 20, 15, 137.1M, 17.9M, 165.4M, 2 };
             decimal[] x2 = { 18.9M, 13.7M, 18.5M, 4.8M, 21.8M, 5.8M, 99, 20.1M, 60.6M, 1.4M };
 
-
             var mlr = new MultipleLinearRegression();
             mlr.Compute(y, x1, x2);
 
@@ -29,7 +39,6 @@ namespace Statistics.UnitTest.Models
 
             Assert.AreEqual(0.9280, (double)mlr.RValues[0], 0.0001);
             Assert.AreEqual(0.7508, (double)mlr.RValues[1], 0.0001);
-
         }
     }
 }
