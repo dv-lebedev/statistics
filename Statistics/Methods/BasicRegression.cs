@@ -62,7 +62,7 @@ namespace Statistics.Methods
             int N = x.Length;
             decimal xAverage = x.Average();
             decimal yAverage = y.Average();
-            decimal sx2 = MathUtils.PowArray(x) / N - Math.Pow(xAverage.ToDouble(), 2).ToDecimal();
+            decimal sx2 = MathUtils.Pow(x, 2) / N - Math.Pow(xAverage.ToDouble(), 2).ToDecimal();
             decimal xy = MathUtils.MultiplyArrays(x, y);
             decimal covariation = xy / N - xAverage * yAverage;
             b1 = covariation / sx2;

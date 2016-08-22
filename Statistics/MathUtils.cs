@@ -22,6 +22,18 @@ namespace Statistics
 {
     public static class MathUtils
     {
+        public static double[] GetError(double[] values)
+        {
+            double[] result = new double[values.Length - 1];
+
+            for (int i = 1; i < values.Length; i++)
+            {
+                result[i - 1] = values[i] - values[i - 1];
+            }
+
+            return result;
+        }
+
         public static decimal[] GetError(decimal[] values)
         {
             decimal[] result = new decimal[values.Length - 1];
@@ -32,6 +44,21 @@ namespace Statistics
             }
 
             return result;
+        }
+
+        public static double GetStandardDeviation(double[] values)
+        {
+            if (values == null) throw new ArgumentNullException("values");
+
+            double result = 0;
+
+            double average = values.Average();
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                result += Math.Pow(values[i] - average, 2);
+            }
+            return Math.Sqrt(result /= (values.Length - 1));
         }
 
         public static decimal GetStandardDeviation(decimal[] values)
@@ -49,6 +76,24 @@ namespace Statistics
                 result += Math.Pow(arr[i] - average, 2);
             }
             return (decimal)Math.Sqrt(result /= (arr.Length -1 ));
+        }
+
+        public static double MultiplyArrays(double[] x, double[] y)
+        {
+            if (x == null) throw new ArgumentNullException("x");
+            if (y == null) throw new ArgumentNullException("y");
+
+            if (x.Length != y.Length)
+                throw new DifferentLengthException();
+
+            double result = 0;
+
+            for (int i = 0; i < x.Length; i++)
+            {
+                result += x[i] * y[i];
+            }
+
+            return result;
         }
 
         public static decimal MultiplyArrays(decimal[] x, decimal[] y)
@@ -69,7 +114,12 @@ namespace Statistics
             return result;
         }
 
-        public static decimal PowArray(decimal[] values)
+        public static decimal Pow(decimal value, double power)
+        {
+            return Math.Pow(value.ToDouble(), power).ToDecimal();
+        }
+
+        public static double Pow(double[] values, double power)
         {
             if (values == null) throw new ArgumentNullException("values");
 
@@ -77,7 +127,21 @@ namespace Statistics
 
             for (int i = 0; i < values.Length; i++)
             {
-                result += Math.Pow((double)values[i], 2);
+                result += Math.Pow(values[i], power);
+            }
+
+            return result;
+        }
+
+        public static decimal Pow(decimal[] values, double power)
+        {
+            if (values == null) throw new ArgumentNullException("values");
+
+            double result = 0;
+
+            for (int i = 0; i < values.Length; i++)
+            {
+                result += Math.Pow((double)values[i], power);
             }
 
             return (decimal)result;
