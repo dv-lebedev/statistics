@@ -17,7 +17,7 @@ limitations under the License.
 using System;
 using System.Linq;
 
-namespace Statistics
+namespace Statistics.Methods
 {
     public class OrdinaryLeastSquares : IRegressionMethod
     {

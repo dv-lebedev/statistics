@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 
+using Statistics.Methods;
 using System;
 
 namespace Statistics.Models
