@@ -20,7 +20,7 @@ using System.Linq;
 
 namespace Statistics
 {
-    public static class BasicFuncs
+    public static class MathUtils
     {
         public static decimal[] GetError(decimal[] values)
         {

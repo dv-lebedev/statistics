@@ -59,7 +59,7 @@ namespace Statistics.Methods
             RSquaredValues = new decimal[Coefs.Length - 1];
 
             decimal yAverage = y.Average();
-            decimal ySD = BasicFuncs.GetStandardDeviation(y);
+            decimal ySD = MathUtils.GetStandardDeviation(y);
 
             for (int i = 0; i < RValues.Length; i++)
             {
@@ -73,7 +73,7 @@ namespace Statistics.Methods
         {
             int length = x.Length;
             var xAverage = x.Average();
-            var xSD = BasicFuncs.GetStandardDeviation(x);
+            var xSD = MathUtils.GetStandardDeviation(x);
 
             decimal total = 0;
 

@@ -41,10 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions.cs" />
-    <Compile Include="BasicFuncs.cs" />
+    <Compile Include="MathUtils.cs" />
     <Compile Include="DifferentLengthException.cs" />
     <Compile Include="IRegressionMethod.cs" />
     <Compile Include="Matrix.cs" />
+    <Compile Include="Methods\BasicRegression.cs" />
     <Compile Include="Models\AutoRegression.cs" />
     <Compile Include="Models\LinearRegression.cs" />
     <Compile Include="Models\LogitRegression.cs" />

@@ -28,7 +28,7 @@ namespace Statistics.UnitTest
 
             decimal[] expected = { 1, 3, 2, -3, 2, -1, -8, 68, -63, -47, 41, 313.007773M };
 
-            var errorValues = BasicFuncs.GetError(values);
+            var errorValues = MathUtils.GetError(values);
 
             for (int i = 0; i < values.Length - 1; i++)
             {
@@ -42,14 +42,14 @@ namespace Statistics.UnitTest
             decimal[] values = { 1, 3, 5, 7 };
 
 
-            decimal result = BasicFuncs.GetStandardDeviation(values);
+            decimal result = MathUtils.GetStandardDeviation(values);
 
             Assert.AreEqual(2.5819, (double)result, 0.0001);
 
 
             values = new decimal[] { 1, 2, 4, 5 };
 
-            result = BasicFuncs.GetStandardDeviation(values);
+            result = MathUtils.GetStandardDeviation(values);
 
             Assert.AreEqual(1.8257, (double)result, 0.0001);
         }
@@ -64,7 +64,7 @@ namespace Statistics.UnitTest
             Assert.AreEqual(true, x.Length == y.Length);
 
 
-            decimal result = BasicFuncs.MultiplyArrays(x, y);
+            decimal result = MathUtils.MultiplyArrays(x, y);
 
             Assert.AreEqual(-6556, result);
         }
@@ -76,7 +76,7 @@ namespace Statistics.UnitTest
             decimal[] values = { 12, 65, 83, 55, 100, 248, 201, 0, 0, -3, -255 };
 
 
-            decimal result = BasicFuncs.PowArray(values);
+            decimal result = MathUtils.PowArray(values);
 
             Assert.AreEqual(191222, result);
         }

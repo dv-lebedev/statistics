@@ -122,7 +122,7 @@ namespace Statistics
                 mx[row] = new decimal[Rows];
 
                 for (int col = 0; col < Rows; col++)
-                    mx[row][col] = BasicFuncs.MultiplyArrays(GetRow(row), GetRow(col));
+                    mx[row][col] = MathUtils.MultiplyArrays(GetRow(row), GetRow(col));
             }
 
             return new Matrix(mx);
@@ -135,7 +135,7 @@ namespace Statistics
             for (int i = 0; i < matrix.Length; i++)
             {
                 for (int j = 0; j < matrix.Length; j++)
-                    mx[i] = BasicFuncs.MultiplyArrays(matrix[i], y);
+                    mx[i] = MathUtils.MultiplyArrays(matrix[i], y);
             }
 
             return mx;

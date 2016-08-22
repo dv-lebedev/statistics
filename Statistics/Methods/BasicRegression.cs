@@ -62,12 +62,12 @@ namespace Statistics.Methods
             int N = x.Length;
             decimal xAverage = x.Average();
             decimal yAverage = y.Average();
-            decimal sx2 = BasicFuncs.PowArray(x) / N - Math.Pow(xAverage.ToDouble(), 2).ToDecimal();
-            decimal xy = BasicFuncs.MultiplyArrays(x, y);
+            decimal sx2 = MathUtils.PowArray(x) / N - Math.Pow(xAverage.ToDouble(), 2).ToDecimal();
+            decimal xy = MathUtils.MultiplyArrays(x, y);
             decimal covariation = xy / N - xAverage * yAverage;
             b1 = covariation / sx2;
             b0 = yAverage - b1 * xAverage;
-            rValue = b1 * (BasicFuncs.GetStandardDeviation(x) / BasicFuncs.GetStandardDeviation(y));
+            rValue = b1 * (MathUtils.GetStandardDeviation(x) / MathUtils.GetStandardDeviation(y));
             rSquared = Math.Pow(rValue.ToDouble(), 2).ToDecimal();
         }
     }
