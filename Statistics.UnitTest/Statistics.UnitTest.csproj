@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="BasicFuncsTest.cs" />
     <Compile Include="MatrixTest.cs" />
+    <Compile Include="Methods\BasicRegressionTest.cs" />
     <Compile Include="Models\AutoRegressionTest.cs" />
     <Compile Include="Models\LinearRegressionTest.cs" />
     <Compile Include="Models\LogitRegressionTest.cs" />
