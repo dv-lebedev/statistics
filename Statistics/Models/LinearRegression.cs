@@ -49,10 +49,10 @@ namespace Statistics.Models
             RegressionMethod = new OrdinaryLeastSquares();
         }
 
-        public void Compute(decimal[] x, decimal[] y)
+        public void Compute(decimal[] y, decimal[] x)
         {
-            if (x == null) throw new ArgumentNullException("x");
             if (y == null) throw new ArgumentNullException("y");
+            if (x == null) throw new ArgumentNullException("x");
             if (x.Length != y.Length) throw new DifferentLengthException();
 
             RegressionMethod.Compute(y, x);

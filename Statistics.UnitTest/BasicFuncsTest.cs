@@ -76,7 +76,7 @@ namespace Statistics.UnitTest
             decimal[] values = { 12, 65, 83, 55, 100, 248, 201, 0, 0, -3, -255 };
 
 
-            decimal result = MathUtils.PowArray(values);
+            decimal result = MathUtils.Pow(values, 2);
 
             Assert.AreEqual(191222, result);
         }
