@@ -11,7 +11,7 @@ public void LinearRegression_Example()
     decimal[] y = { 8, 6, 10, 6, 10, 13, 9, 11, 15, 17 };
 
     var lr = new LinearRegression();
-    lr.Compute(x, y);
+    lr.Compute(y, x);
 
     Console.WriteLine("y = {0} + {1} * x + error", lr.Alpha, lr.Beta);
     Console.WriteLine("r_value = {0}", lr.RValue);
