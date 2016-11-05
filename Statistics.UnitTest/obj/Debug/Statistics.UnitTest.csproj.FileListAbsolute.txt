@@ -14,4 +14,3 @@ C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.csprojRes
 C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.dll
 C:\GitHub\statistics\Statistics.UnitTest\obj\Debug\Statistics.UnitTest.pdb
 C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\GitHub\statistics\Statistics.UnitTest\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

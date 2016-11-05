@@ -32,7 +32,7 @@ namespace Statistics.UnitTest.Methods
             var linearRegression = new LinearRegression();
             linearRegression.RegressionMethod = new BasicRegression();
 
-            linearRegression.Compute(x, y);
+            linearRegression.Compute(y, x);
 
             Assert.AreEqual(0.8141, (double)linearRegression.RValue, 0.0001);
             Assert.AreEqual(0.6628, (double)linearRegression.RSquared, 0.0001);

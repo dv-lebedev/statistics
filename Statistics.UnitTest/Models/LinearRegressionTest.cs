@@ -29,7 +29,7 @@ namespace Statistics.UnitTest.Models
             decimal[] y = { 8, 6, 10, 6, 10, 13, 9, 11, 15, 17 };
 
             var lr = new LinearRegression();
-            lr.Compute(x, y);
+            lr.Compute(y, x);
 
             Assert.AreEqual(0.8141, (double)lr.RValue, 0.0001);
             Assert.AreEqual(0.6628, (double)lr.RSquared, 0.0001);
