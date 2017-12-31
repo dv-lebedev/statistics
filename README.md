@@ -4,9 +4,6 @@
 
 Matrixes, moving averages, simple and multiple linear regressions etc.
 
-![License](https://img.shields.io/badge/license-Apache 2.0-brightgreen.svg)
-![.Net version](https://img.shields.io/badge/.NET%20Framework-v4.5.2-red.svg)
-
 ```c#
 public void LinearRegression_Example()
 {
