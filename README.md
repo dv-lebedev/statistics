@@ -20,7 +20,7 @@ public void LinearRegression_Example()
 
 public void LogitRegression_Example()
 {
-	bool[] y = { true, true, true, false, true, false, false, true, false };
+    bool[] y = { true, true, true, false, true, false, false, true, false };
     decimal[] x = { 1, 3, 2, 23, 1, 36, 35, 5, 17 };
 
     var logitRegression = new LogitRegression();
